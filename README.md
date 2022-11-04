@@ -4,11 +4,8 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-    ```shell
+    ```
     cd gastby-default-project/
     gatsby develop
     ```
