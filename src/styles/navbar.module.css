@@ -1,0 +1,64 @@
+nav{
+    display: grid;
+    height: 70px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #CD113B;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+nav h1{
+    margin: 0;
+}
+
+nav h3{
+    margin: 0;
+}
+
+nav .site-title{
+    display: flex;
+    padding-left: 20px;    
+}
+
+nav .title-container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav .logo-container{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav .links{
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+@media screen and (max-width:768px) {
+    nav .links{
+      display: none;
+    }
+
+
+  }
+
+.links-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+
+nav a{
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
