@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -10,8 +11,31 @@ section {
   color: #fff
 }
 
-.section-one {  
+.portrait{
+  border-radius: 10px;
+}
 
+.text-container{
+  margin: auto 40px;
+}
+
+.div-container,
+.portrait-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:768px) {
+  .portrait-container{
+    display: none;
+  }
+
+}
+
+.section-one {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .section-two {  
@@ -24,22 +48,9 @@ p{
   margin: 0;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  font-weight: bold;
-}
-.nav-link-item {
-  padding-right: 2rem;
-}
-.nav-link-text {
-  color: black;
-}
+.text-highlight{
+  font-style: italic;
+  color: #CD113B;
+  background-color: #FFC947;
 
-.site-title {
-  font-size: 3rem;
-  color: gray;
-  font-weight: 700;
-  margin: 3rem 0;
 }
