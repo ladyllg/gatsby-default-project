@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
+import ProjectContainerLeft from "../components/project-container-left"
 import Seo from "../components/seo"
 import * as styles from "../styles/layout.module.css"
 import { StaticImage } from "gatsby-plugin-image"
@@ -47,6 +48,15 @@ const IndexPage = () => (
       <div className={styles.portraitContainer}>
         <StaticImage className={styles.portrait} style={{borderRadius: "50%"}} src="../images/portrait.jpg" alt="A bird" width={400} height={400}></StaticImage>
       </div>
+      </section>
+
+      <section className={styles.projectsSection}>
+          <div className={styles.wrap}>
+            <div style={{display: "flex", justifyContent: "center", padding: "50px"}}>
+              <span style={{fontWeight: 700, fontSize: "50px", fontStyle: "normal"}} className={styles.textHighlight}>Some Things I’ve Built</span>
+            </div>
+            <ProjectContainerLeft numberProject="1"/>            
+          </div>        
       </section>
        
   </Layout>

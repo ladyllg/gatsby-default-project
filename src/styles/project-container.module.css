@@ -1,0 +1,59 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+}
+
+.title-project,
+.tags,
+.linksProject{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.title-project{
+    font-family: "Courier Prime", monospace;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.description{
+    background-color: #0B1026;
+    padding: 40px;
+}
+
+.tags{
+    font-family: "Courier Prime", monospace;
+    font-weight: 600;
+}
+
+.tags p{
+    size: 15px;
+}
+
+@media screen and (max-width:1210px){
+    .wrap{
+        display: inline-block;
+    }
+
+    .tags,
+    .linksProject,
+    .title-project{
+        justify-content: center;
+    }
+
+    .img{
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1210px){
+    .overlay{
+        position: absolute;
+        width: 56%;
+        right: 70px;
+    }
+}
