@@ -8,7 +8,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { BsLinkedin,BsInstagram,BsGithub } from 'react-icons/bs';
 import { IconContext } from "react-icons";
 import ContactForm from "../components/contact-form";
-import Footer from '../components/footer'
 
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Home Page">
