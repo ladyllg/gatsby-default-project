@@ -5,7 +5,7 @@ import { FiGithub } from 'react-icons/fi';
 import { TbExternalLink } from 'react-icons/tb';
 import { IconContext } from "react-icons";
 
-const ProjectContainerLeft = ({ numberProject, children }) => {
+const ProjectContainerLeft = ({ numberProject, title, children }) => {
 
   return (
     <>      
@@ -16,7 +16,7 @@ const ProjectContainerLeft = ({ numberProject, children }) => {
             <StaticImage className={styles.img} width="550" src="../images/project.jpg"></StaticImage>
           </div>
           <div className={styles.overlay}>
-            <span className={styles.titleProject}>Project #{numberProject}</span>
+            <span className={styles.titleProject}>{title}</span>
               <div className={styles.description}>
                 <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@mdx-js/react": "^2.1.5",
     "gatsby": "^4.24.5",
     "gatsby-image": "^3.11.0",

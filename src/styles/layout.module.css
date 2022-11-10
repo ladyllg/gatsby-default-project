@@ -48,11 +48,15 @@ section {
 
 .projects-section{
   display: block;
-  height: 200vh;  
+  height: fit-content;  
 }
 
 .projects-section .wrap{
   padding: 0 50px;
+}
+
+.contactSection .wrap{
+  padding-top: 2rem;
 }
 
 p{
@@ -64,6 +68,9 @@ p{
   color: #CD113B;
   background-color: #FFC947;
   padding: 0 10px;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: "normal"
 }
 
 .socials-container{
