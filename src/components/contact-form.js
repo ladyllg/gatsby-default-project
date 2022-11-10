@@ -10,30 +10,33 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
         <form className={styles.form} onSubmit={handleSubmit}>
-            <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" name="email" />
+          <div className={styles.wrap}>
+            <input id="email" type="email" name="email" placeholder="Your email"/>
             <ValidationError
                 className={styles.fieldErrors}
                 prefix="Email"
                 field="email"
                 errors={state.errors}
             />
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" />
+          </div>
+          
+          <div className={styles.wrap}>
+            <textarea id="message" name="message" placeholder="Your message"/>
             <ValidationError
                 className={styles.fieldErrors}
                 prefix="Message"
                 field="message"
                 errors={state.errors}
             />
-            <button type="submit" disabled={state.submitting}>
+          </div>
+          
+          <div className={styles.wrap}>
+            <button type="submit" className={styles.bn13} disabled={state.submitting}>
                 Submit
             </button>
-            <ValidationError className={styles.formErrors} errors={state.errors} />
-        </form>
-    </div>
-    
+          </div>
+          <ValidationError className={styles.formErrors} errors={state.errors} />
+      </form>    
   );
 }

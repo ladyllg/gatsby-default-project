@@ -1,43 +1,77 @@
 .form {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-gap: 1rem;
-    text-align: left;
-    max-width: 400px;
-    margin: 1rem 0;
+  text-align: left;
+  max-width: 60%;
+  margin: 1rem 0;
+}
+
+.form input,
+.form textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background: #C4C4C4;
+  padding: 15px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+}
+
+textarea{
+  height: 250px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.fieldErrors {
+  margin-top: -0.5rem;
+  font-size: small;
+  color: crimson;
+  justify-self: right;
+  grid-column: 1/span 2;
+}
+
+.formErrors {
+  margin-top: 0.5rem;
+  color: crimson;
+  align-self: center; 
+  grid-column: 2/span 1; 
+}
+
+.wrap{
+  margin: 0 0 20px;
+  display: flex;
+}
+
+.bn13 {
+  font-family: lato,sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  background: none;
+  color: white;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  border: 3px solid #b90f35;
+  border-radius: 20px;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn13:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    max-width: 100%;
+    margin-top: 0;
   }
-  .form input, .form textarea, .form button {
-    font-family: inherit;
-    font-size: inherit;
-    border: 1px solid #aaa;
-    background: none;
-    padding: 0.4rem 0.5rem;
-    margin: 0;
-  }
-  .form textarea {
-    resize: vertical;
-  }
-  .form button {
-    border: 1px solid #aaa;
-    background-color: transparent;
-    padding: 0.5rem 0.75rem;
-    margin-top: 0.5rem;
-    justify-self: start;
-    cursor: pointer;
-  }
-  .form button:hover {
-    background-color: #f8f8f8;
-  }
-  .fieldErrors {
-    margin-top: -0.5rem;
-    font-size: small;
-    color: crimson;
-    justify-self: right;
-    grid-column: 1/span 2;
-  }
-  .formErrors {
-    margin-top: 0.5rem;
-    color: crimson;
-    align-self: center; 
-    grid-column: 2/span 1; 
-  }
+}

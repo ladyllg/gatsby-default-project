@@ -8,6 +8,10 @@ const Layout = ({ pageTitle, children }) => {
       <div>
         <Navbar/>
         <main>{children}</main>
+        <footer>
+          <p>{new Date().getFullYear()}, Built with Gatsby.</p>
+          <p>Designed & developed by Laura Lima.</p>
+        </footer>
       </div>
     </>
   )

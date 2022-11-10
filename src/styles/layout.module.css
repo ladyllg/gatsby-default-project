@@ -57,6 +57,11 @@ section {
 
 .contactSection .wrap{
   padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.contactSection{
+  position: relative;
 }
 
 p{
@@ -96,4 +101,32 @@ p{
   .text-container{
     margin: 0;
   }
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 189px;
+}
+
+.wave .shape-fill {
+  fill: #CD113B;
+}
+
+footer{
+  background-color: #CD113B ;
+  color:#fff;
+  font-weight: 600;
+  padding: 10px;
+  display: block;
 }
