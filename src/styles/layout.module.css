@@ -3,6 +3,10 @@ body{
   font-family: "Roboto", sans-serif;
 }
 
+p{
+  margin: 0;
+}
+
 section {
   padding: 30px;
   height: 100vh;
@@ -64,10 +68,6 @@ section {
   position: relative;
 }
 
-p{
-  margin: 0;
-}
-
 .text-highlight{
   font-style: italic;
   color: #CD113B;
@@ -101,6 +101,11 @@ p{
   .text-container{
     margin: 0;
   }
+
+  .footer-container{
+    top:-20px; 
+    right: 50px;
+  }
 }
 
 .wave {
@@ -128,5 +133,22 @@ footer{
   color:#fff;
   font-weight: 600;
   padding: 0 10px 15px ;
-  display: block;
+  position:relative;
+  font-size: 14px;
+}
+
+.footer-wrap{
+  overflow:hidden;
+  text-align: right;
+}
+.footer-container{
+  position:absolute; 
+  top:-80px; 
+  right: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-container{ 
+    right: 40px;
+  }
 }
